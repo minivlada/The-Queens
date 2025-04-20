@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacts</title>
+  <style>
+    /* Подключение шрифтов */
+    @font-face {
+      font-family: 'GT Pressura Mono';
+      src: url('gtpressuramono.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Offset TM';
+      src: url('offsettm.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Alexandra Script';
+      src: url('alexandrascript.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'RightyUsesLeftHand';
+      src: url('7fonts.ru_RightyUsesLeftHand.ttf') format('truetype');
+    }
+
+    :root {
+      --contacts-top: calc(50% + 5px);
+      --header-font-size: 24px;
+      --link-font-size: 20px;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #000;
+      font-family: 'GT Pressura Mono', monospace;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Навигация */
+    .nav {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 20px;
+      font-size: 18px;
+      letter-spacing: -0.5px;
+      font-family: 'GT Pressura Mono', monospace;
+      background: none;
+      text-decoration: underline;
+    }
+    .nav a {
+      text-decoration: none;
+      color: #000;
+      margin: 0 12px;
+    }
+
+ 
+    .contacts-section {
+  position: fixed;     
+  top: 50%;           
+  left: 50%;          
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  width: 90%;
+  max-width: 900px;
+    }
+
+    /* Заголовок “YOU CAN CONTACT WITH ME HERE ☟” */
+    .contacts-header {
+      font-family: 'RightyUsesLeftHand', sans-serif;
+      font-size: 80px;
+      margin-bottom: 0.5px;
+    }
+    .contacts-header span.arrow {
+      display: block;
+      font-size: 90px;
+      margin-top: -8px;
+    }
+
+    /* Ссылка Telegram */
+    .contacts-telegram {
+      font-family: 'GT Pressura Mono', monospace;
+      font-size: var(--link-font-size);
+      margin-top: 0px;
+    }
+    .contacts-telegram a {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    /* Почта */
+    .contacts-mail {
+      font-family: 'GT Pressura Mono', monospace;
+      font-size: var(--link-font-size);
+      margin-top: -19px;
+    }
+
+    /* Футер */
+    .footer {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      font-family: 'Offset TM', sans-serif;
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Навигация -->
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="about-group-history.html">About the group and their history</a>
+    <a href="order.html">Order</a>
+    <a href="contacts.html">Contacts</a>
+  </div>
+
+  <!-- Контактный блок -->
+  <div class="contacts-section">
+    <p class="contacts-header">
+      YOU CAN CONTACT WITH ME HERE
+      <span class="arrow">☟</span>
+    </p>
+
+    <p class="contacts-telegram">
+      <a href="https://t.me/vladicxx" target="_blank" rel="noopener">
+        telegram ( click )
+      </a>
+    </p>
+
+    <p class="contacts-mail">
+      mail:vladamoto14@gmail.com
+    </p>
+  </div>
+
+  <!-- Футер -->
+  <div class="footer">
+    ALL RIGHTS RESERVED.<br>
+    THE WORK WAS PERFORMED BY VLADA MOTOVILOVA IN 2025
+  </div>
+
+</body>
+</html>
